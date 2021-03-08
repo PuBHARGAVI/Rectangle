@@ -25,5 +25,29 @@ public class RectangleTest {
 		assertEquals(-1,rectanglearea.computeArea(-4,-5));
 		assertEquals(-1,rectanglearea.computeArea(-4,5));
 		assertEquals(-1,rectanglearea.computeArea(4,-5));
-	}		
+	}
+	@Test
+	public void testPerimeterIsPositiveForPositiveSideValues() {
+		Rectangle rectanglearea=new Rectangle();
+		assertEquals(18,rectanglearea.computePerimeter(4,5));
+	}
+	@Test
+	public void testPerimeterIsZeroForBothZeroSideValues() {
+		Rectangle rectanglearea=new Rectangle();
+		assertEquals(0,rectanglearea.computePerimeter(0,0));
+	}
+	@Test
+	public void testPerimeterIsNotZeroForOneSideValueZero() {
+		Rectangle rectanglearea=new Rectangle();
+		assertEquals(6,rectanglearea.computePerimeter(0,3));
+		assertEquals(6,rectanglearea.computePerimeter(3,0));
+	}
+	@Test
+	public void testPerimeterIsMinusOneForNegativeSideValues() {
+		Rectangle rectanglearea=new Rectangle();
+		assertEquals(-1,rectanglearea.computePerimeter(-4,-5));
+		assertEquals(-1,rectanglearea.computePerimeter(-4,5));
+		assertEquals(-1,rectanglearea.computePerimeter(4,-5));
+	}
+
 }
