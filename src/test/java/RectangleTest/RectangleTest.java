@@ -23,7 +23,7 @@ public class RectangleTest {
 	public void testAreaIsZeroForOneSideValueZero() {
 		Rectangle rectangle = new Rectangle();
 		
-		assertEquals(0, rectangle.area(0, 3));
+		assertEquals(0, rectangle.area(0, 4));
 		assertEquals(0, rectangle.area(3, 0));
 	}
 
