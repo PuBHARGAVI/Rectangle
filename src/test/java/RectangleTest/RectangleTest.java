@@ -24,7 +24,7 @@ public class RectangleTest {
 		Rectangle rectangle = new Rectangle();
 		
 		assertEquals(0, rectangle.area(0, 4));
-		assertEquals(0, rectangle.area(3, 0));
+		assertEquals(0, rectangle.area(4, 0));
 	}
 
 	@Test
