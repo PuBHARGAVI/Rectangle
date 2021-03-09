@@ -1,16 +1,17 @@
 package Rectangle;
 
 public class Rectangle {
-	public int computeArea(int length,int breadth) {
-		if(length<0 || breadth<0) {
+	public int area(int length, int breadth) {
+		if (length < 0 || breadth < 0) {
 			return -1;
 		}
-		return breadth*length;
+		return breadth * length;
 	}
-	public int computePerimeter(int length,int breadth) {
-		if(length<0 || breadth<0) {
+
+	public int perimeter(int length, int breadth) {
+		if (length < 0 || breadth < 0) {
 			return -1;
 		}
-	return 2*(breadth+length);
+		return 2 * (breadth + length);
 	}
 }
